@@ -47,10 +47,10 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_new -> {
-                // Navigate to NewEntryFragment
+
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fragmentContainer, NewEntryFragment())
-                    .addToBackStack(null) // Enables back navigation
+                    .addToBackStack(null)
                     .commit()
                 true
             }
