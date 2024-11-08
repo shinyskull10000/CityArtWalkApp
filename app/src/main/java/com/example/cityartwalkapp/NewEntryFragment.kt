@@ -70,7 +70,11 @@ class NewEntryFragment: Fragment() {
         }
 
         binding.saveButton.setOnClickListener {
-            saveEntry()
+            if (binding.dateButton.text.toString() == "Select Date") {
+                Toast.makeText(requireContext(), "Please select a date", Toast.LENGTH_SHORT).show()
+            } else {
+                saveEntry()}
+
         }
 
         binding.backButton.setOnClickListener() {
