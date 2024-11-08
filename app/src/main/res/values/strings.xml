@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CityArtWalkApp</string>
+    <string name="gps_location">GPS Location: %1$.6f, %2$.6f</string>
+    <string name="zoomed_image">Zoomed-in image</string>
+    <string name="take_photo_button">Take photo</string>
+    <string name="image_thumbnail">Image thumbnail</string>
+</resources>
